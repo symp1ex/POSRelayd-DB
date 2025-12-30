@@ -1,8 +1,8 @@
-# Getad_DB
+# POSRelayd_DB
 
 ## Описание
 
-Веб-сервер, предоставляющий простой веб-интерфейс взаимодействия с базой данных, собираемых службой **getad-service**: <br>https://github.com/symp1ex/getad-service
+Веб-сервер, предоставляющий простой веб-интерфейс взаимодействия с базой данных, собираемых службой **POSRelayd**: <br>https://github.com/symp1ex/posrelayd-service
 
 На данный момент имеется: 
 
@@ -35,13 +35,13 @@
 ### Команда на сборку docker-образа
 
 ```bash
-docker build -t getad_db_img .
+docker build -t posrelayd_db_img .
 ```
 
 ### Команда на запуск docker-контейнера
 
 ```bash
-docker run -d --network host --restart=always -e TZ=Etc/GMT-3 --name getad_db getad_db_img
+docker run -d --network host --restart=always -e TZ=Etc/GMT-3 --name posrelayd_db posrelayd_db_img
 
 ```
 **`--restart=always`**: является обязательным параметром
@@ -51,7 +51,7 @@ docker run -d --network host --restart=always -e TZ=Etc/GMT-3 --name getad_db ge
 Пример команды на запуск docker-контейнера с примонтированным каталогом:
 
 ```bash
-docker run -d --network host -v /home/user/service/getad_db/source/:/app/source --restart=always -e TZ=Etc/GMT-3 --name getad_db getad_db_img
+docker run -d --network host -v /home/user/service/posrelayd_db/source/:/app/source --restart=always -e TZ=Etc/GMT-3 --name posrelayd_db posrelayd_db_img
 ```
 
 ## Конфигурация
@@ -91,7 +91,7 @@ admin_pass = 4321
 
 [db-update]
 reference = 1
-db-name = getad
+db-name = posrelayd
 host = localhost
 port = 5432
 user = 

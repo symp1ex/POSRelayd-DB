@@ -17,4 +17,4 @@ COPY *.py /app/
 
 WORKDIR /app
 
-CMD ["python", "getad_db.py"]
+CMD ["python", "posrelayd_db.py"]
