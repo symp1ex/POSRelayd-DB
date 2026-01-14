@@ -198,7 +198,7 @@ class DbQueries(DatabaseContextManager):
                             # Пропускаем обновление, если новый v_time отсутствует или старее существующего
                             if not new_v_time or (existing_v_time and str(existing_v_time) > str(new_v_time)):
                                 core.logger.db_service.warning(
-                                    f"Добавляемый файл имеет более раннюю дату, обновление записи пропущено")
+                                    f"Добавляемый файл '{filename}' имеет более раннюю дату, обновление записи пропущено")
                                 return
 
                         # Проверка и добавление новых столбцов
