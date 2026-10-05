@@ -2,7 +2,9 @@
 
 ## Описание
 
-Веб-сервер, предоставляющий простой веб-интерфейс взаимодействия с базой данных, собираемых службой **POSRelayd**: <br>https://github.com/symp1ex/POSRelayd
+Веб-сервер, предоставляющий простой веб-интерфейс взаимодействия с базой данных, собираемых службой **POSRelayd**: <br>
+https://pb2.sympl.top/distr/POSRelayd-old/POSRelayd.v2.3.2.2-build.zip<br>
+https://pb2.sympl.top/distr/POSRelayd-old/POSRelayd-2.3.2.2-source_code.zip
 
 На данный момент имеется: 
 
